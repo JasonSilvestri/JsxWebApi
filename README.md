@@ -132,4 +132,4 @@ A future version of this documentation will have examples of how we use basic fe
 
 A future version of this documentation will have examples of how we use each front end client application to retrieve a response from the same Web API demos.
 
-**Copyright © 2024 All Rights Reserved by Jason Silvestri**
+**Copyright © 2024 - All Rights Reserved by Jason Silvestri**
