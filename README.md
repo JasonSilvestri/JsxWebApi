@@ -1,5 +1,7 @@
 # Official JSX Web API of the jSilvestri.com BETA v 2024 Web API Demo Collection
 
+The `JsxWebAPI` application (i.e., jSilvestri.com BETA v 2024 Web API) in specific, is a FREE, open-source, custom, reusable, jSilvestri.com 2024 Web API Demo Collections ASP.NET Core 8 Web API, used for creating RESTful Web API secure end points, leveraging Asp.NET Core 8 controllers or minimal APIs, with optional support for OpenAPI and authentication, and backed by JWT Tokens.
+
 ## Overview
 
 The `jSilvestri.com BETA v 2024` mobile and web applications, developed for most smart phones, tablets and desktop computers, was created to showcase a wide range of skills to potential clients and employers, while providing helpful information to fellow developers, demos for interview talks, access to resumes, etc.
