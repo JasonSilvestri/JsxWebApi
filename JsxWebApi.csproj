@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Description>The jSilvestri.com BETA v 2024 mobile and web applications, developed for most smart phones, tablets and desktop computers, was created to showcase a wide range of skills to potential clients and employers, while providing helpful information to fellow developers, demos for interview talks, access to resumes, etc.
+
+The JsxWebAPI (i.e., jSilvestri.com BETA v 2024 Web API) in specific, is a FREE, open-source, custom, reusable, jSilvestri.com 2024 Web API Demo Collections ASP.NET Core 8 Web API, used for creating RESTful Web API secure end points, by leveraging Asp.NET Core 8 controllers or minimal APIs, with optional support for OpenAPI and authentication, and backed by JWT Tokens. This library promotes code reuse, reduces duplication, and simplifies maintenance. 
+
+Many applications in the Custom jSilvestri.com BETA v 2024 Web API Demo Collection, such as the Angular Web API Demo, Blazor Web API Demo, React Web API Demo, and Vue Web API Demo Applications will use this project to reference common features throughout the collective applications.</Description>
+    <Product>jSilvestri.com BETA v 2024 Web API Demo Collection: Official Web API Application</Product>
+    <Company>jSilvestri.com</Company>
+    <Authors>Jason Silvestri</Authors>
+    <Title>jSilvestri.com BETA v 2024 Web API Demo Collection JSX Web API</Title>
+    <Copyright>Copyright © 2024 All Rights Reserved by Jason Silvestri</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>06/01/2024 JSILVESTRI.COM BETA V 2024.0.0.001 CHECK-IN
+Current Workflow State: Completed
+Mobile / Web Developer: Jason Silvestri
+
+Date Reported:    June 01, 2024
+Date Completed: June 01, 2024
+Build: BETA v 2024.0.0.001
+
+All Notes:
+This release (2024.0.0.001) marks the first iteration of the custom jSilvestri.com BETA v 2024 Web API Demo Collection: Official JSX Class Library Application.
+
+⚠️ IMPORTANT! ⚠️
+
+This is the initial release of the Custom jSilvestri.com BETA v2024 Web API Demo Collection: Official JSX Class Library Application. It includes only the essential resources by design.
+
+Many applications in the Custom jSilvestri.com BETA v2024 Web API Demo Collection, such as the Angular, Blazor, React, and Vue Web API Demo Applications, will begin similarly. This intentional minimalism allows for a demonstration of the step-by-step evolution of each application, from initial template to fully developed project. This progression will cover various aspects including graphics, themes, imagery, CSS, JS, HTML, and related technologies, highlighting the process of maximizing creative asset reuse.</PackageReleaseNotes>
+    <AssemblyVersion>2024.0.0.001</AssemblyVersion>
+    <FileVersion>2024.0.0.1</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
