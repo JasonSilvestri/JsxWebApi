@@ -123,15 +123,15 @@ The project is organized into the following structure:
     app.MapControllers();
 
     app.Run();
- 
+    ```
 
-### Primary Usage
+### Usage
 
 #### AuthController
 
 **AuthController.cs**:
 
-    ```csharp
+```csharp
 using Microsoft.AspNetCore.Mvc;
 using JsxClassLibrary.Helpers;
 using JsxClassLibrary.Constants;
@@ -153,57 +153,14 @@ namespace JsxWebApi.Controllers
                 var token = JwtHelper.GenerateJwtToken(
                     userId: "1",
                     role: "User",
-                    key: ApiConstants.JwtKey,
-                    issuer: ApiConstants.JwtIssuer,
-                    audience: ApiConstants.JwtAudience,
+                    key: JsxConstants.JwtKey,
+                    issuer: JsxConstants.JwtIssuer,
+                    audience: JsxConstants.JwtAudience,
                     expiresInMinutes: 60);
 
                 return Ok(new { token });
             }
             return Unauthorized();
-        }
-    }
-}
-
-
-#### WeatherForecastController
-
-**WeatherForecastController.cs**:
-
-For the initial Web API examples, we will be setting up the AngularJS, Vue.js, React.js, and Blazor Web API Demos to handle the response from the JSX Web API to display static weather forecast data. However, the final version of this Web API will also retrieve data from a live, real-time, weather web api.
-
-    ```csharp
-using Microsoft.AspNetCore.Mvc;
-
-namespace JsxWebApi.Controllers
-{
-
-    [ApiController]
-    [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
-    {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
-        {
-            _logger = logger;
-        }
-
-        [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
-        {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
         }
     }
 }
