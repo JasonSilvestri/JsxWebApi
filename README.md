@@ -1,4 +1,4 @@
-# JsxWebApi: Official JSX Web API of the jSilvestri.com BETA v 2024 Web API Demo Collection
+# Official JSX Web API of the jSilvestri.com BETA v 2024 Web API Demo Collection
 
 ## Overview
 
@@ -8,7 +8,7 @@ The `JsxWebAPI` application (i.e., jSilvestri.com BETA v 2024 Web API) in specif
 
 Many applications in the `Custom jSilvestri.com BETA v 2024 Web API Demo Collection`, such as the `Angular Web API Demo`, `Blazor Web API Demo`, `React Web API Demo`, and `Vue Web API Demo` applications will use this project to reference common features throughout the collective applications.
 
-Copyright © 2024 All Rights Reserved by Jason Silvestri
+**Copyright © 2024 All Rights Reserved by Jason Silvestri**
 
 ## Project Structure
 
@@ -126,44 +126,7 @@ The project is organized into the following structure:
     ```
 
 ### Usage
-
-#### AuthController
-
-**AuthController.cs**:
-
-```csharp
-using Microsoft.AspNetCore.Mvc;
-using JsxClassLibrary.Helpers;
-using JsxClassLibrary.Constants;
-using JsxWebApi.Models;
-
-namespace JsxWebApi.Controllers
-{
-    [ApiController]
-    [Route("api/[controller]")]
-    public class AuthController : ControllerBase
-    {
-        [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginModel login)
-        {
-            // Validate the user credentials
-            // Replace with your own user validation logic
-            if (login.Username == "user" && login.Password == "password")
-            {
-                var token = JwtHelper.GenerateJwtToken(
-                    userId: "1",
-                    role: "User",
-                    key: JsxConstants.JwtKey,
-                    issuer: JsxConstants.JwtIssuer,
-                    audience: JsxConstants.JwtAudience,
-                    expiresInMinutes: 60);
-
-                return Ok(new { token });
-            }
-            return Unauthorized();
-        }
-    }
-}
+A future version of this documentation will have examples of how we use basic features of the Web API. 
 
 ### Secondary Usage (Web API Demo Apps in Angular, Blazor, React, Vue, etc.)
 
