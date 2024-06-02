@@ -1,4 +1,4 @@
-# JsxWebApi
+# JsxWebApi: Official JSX Web API of the jSilvestri.com BETA v 2024 Web API Demo Collection
 
 ## Overview
 
@@ -22,7 +22,7 @@ The project is organized into the following structure:
 - **Program.cs**: Configures the application and its middleware.
 - **appsettings.json**: Configuration file for application settings.
 
-- ### Key Project References
+### Key Project References
 
 - **Jsx Web API (You Are Here)**: Contains RESTful Web API secure end points, using Asp.NET Core 8 controllers or minimal APIs, with optional support for OpenAPI and authentication, and additional JWT authentication.
 
@@ -123,7 +123,7 @@ The project is organized into the following structure:
     app.MapControllers();
 
     app.Run();
-    ```
+ 
 
 ### Primary Usage
 
@@ -164,7 +164,7 @@ namespace JsxWebApi.Controllers
         }
     }
 }
-    ```
+
 
 #### WeatherForecastController
 
@@ -207,7 +207,7 @@ namespace JsxWebApi.Controllers
         }
     }
 }
-    ```
+
 ### Secondary Usage (Web API Demo Apps in Angular, Blazor, React, Vue, etc.)
 
 A future version of this documentation will have examples of how we use each front end client application to retrieve a response from the same Web API demos.
