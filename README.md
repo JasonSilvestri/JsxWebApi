@@ -10,8 +10,6 @@ The `JsxWebAPI` application (i.e., jSilvestri.com BETA v 2024 Web API) in specif
 
 Many applications in the `Custom jSilvestri.com BETA v 2024 Web API Demo Collection`, such as the `Angular Web API Demo`, `Blazor Web API Demo`, `React Web API Demo`, and `Vue Web API Demo` applications will use this project to reference common features throughout the collective applications.
 
-**Copyright © 2024 All Rights Reserved by Jason Silvestri**
-
 ## Project Structure
 
 The project is organized into the following structure:
@@ -133,3 +131,5 @@ A future version of this documentation will have examples of how we use basic fe
 ### Secondary Usage (Web API Demo Apps in Angular, Blazor, React, Vue, etc.)
 
 A future version of this documentation will have examples of how we use each front end client application to retrieve a response from the same Web API demos.
+
+**Copyright © 2024 All Rights Reserved by Jason Silvestri**
