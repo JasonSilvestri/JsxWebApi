@@ -14,19 +14,6 @@ Copyright © 2024 All Rights Reserved by Jason Silvestri
 
 The project is organized into the following structure:
 
-JsxWebApi/
-├── Controllers/
-│ └── AuthController.cs
-│ └── WeatherForeCastController.cs
-├── Models/
-│ └── LoginModel.cs
-├── Services/
-│ └── UserService.cs
-│ └── WeatherForecast.cs
-├── Program.cs
-├── appsettings.json
-└── appsettings.Development.json
-
 ### Key Components
 
 - **Controllers**: Contains API controllers for handling RESTful HTTP requests.
@@ -39,7 +26,7 @@ JsxWebApi/
 
 - **Jsx Web API (You Are Here)**: Contains RESTful Web API secure end points, using Asp.NET Core 8 controllers or minimal APIs, with optional support for OpenAPI and authentication, and additional JWT authentication.
 
-- **Jsx Class Library **: Contains constant values used across the application, such as JWT settings.
+- **Jsx Class Library**: Contains constant values used across the application, such as JWT settings.
 
 ## Getting Started
 
@@ -144,7 +131,7 @@ JsxWebApi/
 
 **AuthController.cs**:
 
-```csharp
+    ```csharp
 using Microsoft.AspNetCore.Mvc;
 using JsxClassLibrary.Helpers;
 using JsxClassLibrary.Constants;
@@ -177,7 +164,7 @@ namespace JsxWebApi.Controllers
         }
     }
 }
-
+    ```
 
 #### WeatherForecastController
 
@@ -185,8 +172,7 @@ namespace JsxWebApi.Controllers
 
 For the initial Web API examples, we will be setting up the AngularJS, Vue.js, React.js, and Blazor Web API Demos to handle the response from the JSX Web API to display static weather forecast data. However, the final version of this Web API will also retrieve data from a live, real-time, weather web api.
 
-
-```csharp
+    ```csharp
 using Microsoft.AspNetCore.Mvc;
 
 namespace JsxWebApi.Controllers
@@ -221,7 +207,7 @@ namespace JsxWebApi.Controllers
         }
     }
 }
-
+    ```
 ### Secondary Usage (Web API Demo Apps in Angular, Blazor, React, Vue, etc.)
 
 A future version of this documentation will have examples of how we use each front end client application to retrieve a response from the same Web API demos.

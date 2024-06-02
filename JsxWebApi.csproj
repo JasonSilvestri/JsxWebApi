@@ -33,6 +33,7 @@ This is the initial release of the Custom jSilvestri.com BETA v2024 Web API Demo
 Many applications in the Custom jSilvestri.com BETA v2024 Web API Demo Collection, such as the Angular, Blazor, React, and Vue Web API Demo Applications, will begin similarly. This intentional minimalism allows for a demonstration of the step-by-step evolution of each application, from initial template to fully developed project. This progression will cover various aspects including graphics, themes, imagery, CSS, JS, HTML, and related technologies, highlighting the process of maximizing creative asset reuse.</PackageReleaseNotes>
     <AssemblyVersion>2024.0.0.001</AssemblyVersion>
     <FileVersion>2024.0.0.1</FileVersion>
+    <RepositoryUrl>https://github.com/JasonSilvestri/JsxWebApi</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
