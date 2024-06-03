@@ -34,6 +34,7 @@ Many applications in the Custom jSilvestri.com BETA v2024 Web API Demo Collectio
     <AssemblyVersion>2024.0.0.001</AssemblyVersion>
     <FileVersion>2024.0.0.1</FileVersion>
     <RepositoryUrl>https://github.com/JasonSilvestri/JsxWebApi</RepositoryUrl>
+    <Version>2024.0.0.001</Version>
   </PropertyGroup>
 
   <ItemGroup>
