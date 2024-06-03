@@ -132,6 +132,7 @@ A future version of this documentation will have examples of how we use basic fe
 
 A future version of this documentation will have examples of how we use each front end client application to retrieve data from the same Web API.
 
+
 ## Planned Evolution of jSilvestri.com BETA v2024 Web API Demo Collection
 
 Depending on when you visit this demo application, it may look very different from your previous visit. I am not talking about common checkins to improve the applications. I am talking about noticable, planned, development that will shape each application in accordance to the grand design. In other words, the variability is intentional. 
@@ -147,7 +148,7 @@ There are typically two primary ways to handle source control for multiple proje
 1. **Monorepo**: Storing all projects within a single GitHub repository. This approach simplifies managing dependencies and integrations between projects and ensures consistency across the solution.
 2. **Multi-repo**: Creating separate GitHub repositories for each project. This approach provides greater modularity and allows each project to evolve independently, which can be beneficial if projects have different development cycles or teams.
 
-We will use a combination of both approaches. This hybrid method allows potential clients, employers, and fellow developers to download and run the applications they are most interested in as standalone projects (i.e., AngularJS, Vue, ReactJS, or Blazor), all accessing the same Web API project using ASP.NET Core 8 and Visual Studio 2022 (or higher), each with their own project and solution. Additionally, this approach ensures we can also create a project and solution that includes all applications, facilitating easy transitions between tiers for various needs (i.e., jSilvestri.com BETA v2024 Web API Demo Collection Project).
+We will use a combination of both approaches. This hybrid method allows potential clients, employers, and fellow developers to download and run the applications they are most interested in as standalone projects (i.e., _AngularJS_, _Vue_, _ReactJS_, or _Blazor_), all accessing the same Web API project using ASP.NET Core 8 and Visual Studio 2022 (_or higher_), each with their own project and solution. Additionally, this approach ensures we can also create a project and solution that includes all applications, facilitating easy transitions between tiers for various needs (i.e., the _jSilvestri.com BETA v 2024 Web API Demo Collection Project_).
 
 ### Project Development Steps - Phase 1:
 
@@ -161,11 +162,11 @@ While this workflow may change, the steps I am taking to conclude all aspects of
 
 4. **Add Frontend Projects**:
    - Add separate projects and solutions for AngularJS, Vue, ReactJS, and Blazor. We will initially choose the appropriate project templates provided by Visual Studio.
-   - For AngularJS, Vue, and ReactJS, we will consider creating separate ASP.NET Core Web Application projects and choosing the respective frontend frameworks (Angular, Vue.js, React.js) during project creation.
+   - For AngularJS, Vue, and ReactJS, we will consider creating separate ASP.NET Core Web Application projects and choosing the respective frontend frameworks (i.e., _Angular_, _Vue.js_, _React.js_) during project creation.
    - For Blazor, we will create a Blazor WebAssembly or Blazor Server project, depending on your preference. If I have bandwidth, I may also create a Blazor Hybrid Project, which is relatively new to the scene.
 
 5. **Setup Communication**:
-   - Each frontend project (AngularJS, Vue, ReactJS, Blazor) will make HTTP requests to the Web API project to fetch data or perform operations. For the first iteration of data, we will use some static weather data. 
+   - Each frontend project (_AngularJS_, _Vue_, _ReactJS_, _Blazor_, etc.) will make HTTP requests to the Web API project to fetch data or perform operations. For the first iteration of data, we will use some static weather data. 
 
 6. **Configure Routes**:
    - We will define appropriate routes in our Web API project to handle incoming requests from the frontend projects.
@@ -198,12 +199,12 @@ While this workflow may change, the steps I am taking to conclude all aspects of
 
 3. **Update Shared Assets Project**: Update new ASP.NET Core project and solution that will handle common, static, assets and resources, shared across all applications. This project will serve as the resource project with all HTML, CSS, JS, Images and other creative all projects will use to carry the same theme, look and feel across applications.
 
-4. **Add All Frontend Projects, Assets Projects & Web API to jSilvestri.com BETA v2024 Web API Demo Collection Soluions**:
+4. **Add All Frontend Projects, Assets Projects & Web API to jSilvestri.com BETA v2024 Web API Demo Collection Solutions**:
    - Clone all projects and add them to the jSilvestri.com BETA v2024 Web API Demo Collection project for full access and testing of all projects in one, unified, location.
 
 5. **Setup Communication**:
-   - Each frontend project (AngularJS, Vue, ReactJS, Blazor) will make HTTP requests to the Web API project to fetch data or perform operations. The final version will access real-time weather data from one or more weather APIs available today.
-   - Ensure that CORS (Cross-Origin Resource Sharing) is properly configured in the Web API project to allow requests from the frontend projects.
+   - Each frontend project (_AngularJS_, _Vue_, _ReactJS_, _Blazor_, etc.) will make HTTP requests to the Web API project to fetch data or perform operations. The final version will access real-time weather data from one or more weather APIs available today.
+   - Ensure that CORS (_Cross-Origin Resource Sharing_) is properly configured in the Web API project to allow requests from the frontend projects.
 
 6. **Configure Routes**:
    - We will define appropriate routes in our Web API project to handle incoming requests from the frontend projects.
@@ -214,7 +215,7 @@ While this workflow may change, the steps I am taking to conclude all aspects of
    - An eventual version of this approach will leverage a structure where we have specific repositories for each service along with a generic repository to handle common CRUD operations, following a design pattern like the Repository Pattern.
 
 8. **Authentication and Authorization (Optional)**:
-   - We will use JWT (JSON Web Tokens) for authentication and role-based authorization.
+   - We will use JWT (_JSON Web Tokens_) for authentication and role-based authorization.
 
 9. **Testing and Debugging**:
    - Test the communication between the frontend projects and the Web API project.
