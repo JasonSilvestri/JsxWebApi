@@ -55,4 +55,8 @@ Many applications in the Custom jSilvestri.com BETA v2024 Web API Demo Collectio
     <Folder Include="Services\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\JsxClassLibrary\JsxClassLibrary.csproj" />
+  </ItemGroup>
+
 </Project>
