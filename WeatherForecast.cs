@@ -13,7 +13,7 @@
     /// Many applications in the Custom jSilvestri.com BETA v 2024 Web API Demo Collection, such as the <c>Angular Web API Demo</c>, <c>Blazor Web API Demo</c>, <c>React Web API Demo</c>, and <c>Vue Web API Demo</c> Applications, will begin using this service in very similar situations. 
     /// </para>
     /// </summary>
-    public class WeatherForecast
+    public class WeatherForecastViaWebApi
     {
         public DateOnly Date { get; set; }
 
