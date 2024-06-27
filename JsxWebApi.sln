@@ -10,6 +10,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsxWebApi", "JsxWebApi.cspr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsxClassLibrary", "..\JsxClassLibrary\JsxClassLibrary.csproj", "{444AB289-0C34-4C40-BE5F-FAF4E3D50C73}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsxSharedResources", "..\JsxSharedResources\JsxSharedResources.csproj", "{AF83F987-5CFF-4941-B213-7FB8DD87A913}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{444AB289-0C34-4C40-BE5F-FAF4E3D50C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{444AB289-0C34-4C40-BE5F-FAF4E3D50C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{444AB289-0C34-4C40-BE5F-FAF4E3D50C73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF83F987-5CFF-4941-B213-7FB8DD87A913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF83F987-5CFF-4941-B213-7FB8DD87A913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF83F987-5CFF-4941-B213-7FB8DD87A913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF83F987-5CFF-4941-B213-7FB8DD87A913}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
