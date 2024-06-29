@@ -24,9 +24,9 @@ builder.Services.AddAuthentication(options =>
         ValidateAudience = true,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = builder.Configuration[JsxConstants.JsxWebApiDemoSettings.JwtIssuer],
-        ValidAudience = builder.Configuration[JsxConstants.JsxWebApiDemoSettings.JwtAudience],
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration[JsxConstants.JsxWebApiDemoSettings.JwtKey]))
+        ValidIssuer = builder.Configuration[JsxConstants.JsxAppDemoSettings.JwtIssuer],
+        ValidAudience = builder.Configuration[JsxConstants.JsxAppDemoSettings.JwtAudience],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration[JsxConstants.JsxAppDemoSettings.JwtKey]))
     };
 });
 

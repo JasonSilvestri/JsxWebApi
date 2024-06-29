@@ -35,9 +35,9 @@ namespace JsxWebApi.Controllers
                 var token = JwtHelper.GenerateJwtToken(
                     userId: "1",
                     role: "User",
-                    key: JsxConstants.JsxWebApiDemoSettings.JwtKey,
-                    issuer: JsxConstants.JsxWebApiDemoSettings.JwtIssuer,
-                    audience: JsxConstants.JsxWebApiDemoSettings.JwtAudience,
+                    key: JsxConstants.JsxAppDemoSettings.JwtKey,
+                    issuer: JsxConstants.JsxAppDemoSettings.JwtIssuer,
+                    audience: JsxConstants.JsxAppDemoSettings.JwtAudience,
                     expiresInMinutes: 60);
 
                 return Ok(new { token });
