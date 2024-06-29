@@ -17,17 +17,17 @@
       Currently in Phase 1 of 4, this project is one of several projects from the jSilvestri.com BETA v 2024 Web API Demo Collection.
     </Description>
     <Copyright>Copyright © 2024 All Rights Reserved by Jason Silvestri</Copyright>
-    <PackageIcon>android-chrome-192x192.png</PackageIcon>
+    <PackageIcon>favicon.ico</PackageIcon>
     <PackageProjectUrl>https://github.com/JasonSilvestri/JsxWebApi</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/JasonSilvestri/JsxWebApi.git</RepositoryUrl>
     <PackageReleaseNotes>
-      06/27/2024 JSILVESTRI.COM BETA V 2024.0.0.001 Release
+      06/28/2024 JSILVESTRI.COM BETA V 2024.0.0.001 Release
       Current Workflow State: Completed
       Mobile / Web Developer: Jason Silvestri
 
-      Date Reported:    June 26, 2024
-      Date Completed: June 27, 2024
+      Date Reported:    June 28, 2024
+      Date Completed: June 28, 2024
       Build: BETA v 2024.0.0.001
 
       All Notes:
@@ -40,17 +40,20 @@
       * Used new JsxWebApi JaxClass Lib constant Product Names, Descriptions, GitHub information, etc. to configure static assets
 
       * Updated JsxWebApi rrelease notes and other related items. 
-      
+
+      * Found a ridiculous bug in Visual Studio 2022 Project settings, under &gt; Application &gt; Win32 Resources &gt; with the property “*.icon” property that was bringing down my jSx WebAPI application! Wait, what? Right. Plus, you may never set it, it is easy to miss, and occurs if you set a different, but similar property, under &gt; Package &gt; General &gt; with the property “*.icon” property.
+To reproduce the issue, the property encourages a png or jpg image to be added (preferably 128 x 128). I thought it was odd, given a property “*.icon is looking for a common favicon.ico. So, whatever. Still, just updated this property the other night to have a bigger, more high-resolution image. Well, apparently  the Application &gt; Win32 Resources &gt; “*.icon” property still doesn’t think so, and if it was empty before, it may not be now, because it will get updates by Package &gt; General &gt; with the property “*.icon” property, and it will crash you’re app, and then crash any app the project gets shared by.  
+       
       ⚠️ IMPORTANT! ⚠️
 
       This is the initial Phase 1 of 4 release of the application. It includes only the essential resources by design, and it will have a release lifecycle of already planned phases and features, also by design.
     </PackageReleaseNotes>
-    <ApplicationIcon>android-chrome-192x192.png</ApplicationIcon>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
 
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="android-chrome-192x192.png" />
+    <Content Include="favicon.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -76,7 +79,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\JsxSharedResources\android-chrome-192x192.png">
+    <None Include="..\JsxSharedResources\favicon.ico">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
